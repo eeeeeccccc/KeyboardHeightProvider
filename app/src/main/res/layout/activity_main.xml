@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activitylayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -8,17 +7,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/info_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:text="@string/info"
             android:textColor="@android:color/black"
-            android:textSize="16dp"
-            android:text="@string/info">
+            android:textSize="16dp">
 
         </TextView>
 
@@ -26,24 +25,23 @@
             android:id="@+id/input_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            >
-        </EditText>
+            android:layout_marginBottom="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="100dp">
 
             <TextView
                 android:id="@+id/height_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
+                android:text="@string/height"
                 android:textColor="@android:color/black"
-                android:textSize="16dp"
-                android:text="@string/height">
+                android:textSize="16dp">
 
             </TextView>
 
@@ -51,21 +49,14 @@
                 android:id="@+id/height_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="0"
                 android:textColor="@android:color/black"
-                android:textSize="16dp"
-                android:text="0">
+                android:textSize="16dp">
 
             </TextView>
 
         </LinearLayout>
 
     </LinearLayout>
-
-    <View
-        android:id="@+id/keyboard"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_alignParentBottom="true"
-        android:background="#0000ff"/>
 
 </RelativeLayout>

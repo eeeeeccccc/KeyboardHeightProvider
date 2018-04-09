@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.keyboardheight.library.KeyboardHeightObserver;
@@ -83,11 +82,6 @@ public class MainActivity extends AppCompatActivity implements KeyboardHeightObs
 
         TextView tv = (TextView) findViewById(R.id.height_text);
         tv.setText(height + "  |  " + or);
-
-        // color the keyboard height view, this will stay when you close the keyboard
-        View view = findViewById(R.id.keyboard);
-        RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) view.getLayoutParams();
-        params.height = height;
     }
 
 }
