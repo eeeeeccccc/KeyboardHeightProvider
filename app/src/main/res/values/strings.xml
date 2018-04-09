@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KeyboardHeightProvider</string>
+    <string name="info">info</string>
+    <string name="height">height</string>
+</resources>
